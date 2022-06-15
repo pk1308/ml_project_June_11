@@ -3,3 +3,5 @@ sklearn
 numpy 
 seaborn
 matplotlib
+Flask
+gunicorn
