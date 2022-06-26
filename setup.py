@@ -1,35 +1,32 @@
-from setuptools import Require, setup 
+from setuptools import setup,find_packages
 from typing import List
 
-# declaring variables for the setup.py
+#Declaring variables for setup functions
+PROJECT_NAME="housing-predictor"
+VERSION="0.0.2"
+AUTHOR="PK"
+DESCRIPTION="This is a first FSDS Nov batch Machine Learning Project"
 
-PROJECT_NAME =  "Housing price prediction"
-VERSION = "0.0.2"
-AUTHOR = "PK"
-DESCRIPTION = "Housing price prediction"
-PACKAGES = ["housing"]
-REQUIREMENTS_FILE_PATH = "requirements.txt"
+REQUIREMENT_FILE_NAME="requirements.txt"
 
-def get_requirements() ->List[str]:
-    """ 
+
+def get_requirements_list()->List[str]:
+    """
+   
     Description: This function is going to return list of requirement 
     mention in requirements.txt file
     return This function is going to return a list which contain name 
     of libraries mentioned in requirements.txt file
     """
-    with open(REQUIREMENTS_FILE_PATH) as requirements_file:
-        return requirements_file.readlines()
+    with open(REQUIREMENT_FILE_NAME) as requirement_file:
+        return requirement_file.readlines().remove("-e .")
 
 
-setup( 
-      name = PROJECT_NAME,
-      Version = VERSION,
-      author= AUTHOR,
-      description= DESCRIPTION,
-      packages= PACKAGES, 
-      install_requires = get_requirements(),
-      
+setup(
+name=PROJECT_NAME,
+version=VERSION,
+author=AUTHOR,
+description=DESCRIPTION,
+packages=find_packages(), 
+install_requires=get_requirements_list()
 )
-
-
-          
