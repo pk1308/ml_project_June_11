@@ -1,3 +1,4 @@
+from ctypes import Structure
 from setuptools import setup,find_packages
 from typing import List
 
@@ -5,7 +6,7 @@ from typing import List
 PROJECT_NAME="housing-predictor"
 VERSION="0.0.2"
 AUTHOR="PK"
-DESCRIPTION="This is a first FSDS Nov batch Machine Learning Project"
+DESCRIPTION=" Machine Learning Project"
 
 REQUIREMENT_FILE_NAME="requirements.txt"
 
