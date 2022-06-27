@@ -4,7 +4,7 @@ from typing import List
 
 #Declaring variables for setup functions
 PROJECT_NAME="housing-predictor"
-VERSION="0.0.2"
+VERSION="0.0.4"
 AUTHOR="PK"
 DESCRIPTION=" Machine Learning Project"
 
