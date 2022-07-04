@@ -21,7 +21,7 @@ class HousingException(Exception):
         try_block_line_number = exec_tb.tb_lineno
         file_name = exec_tb.tb_frame.f_code.co_filename
         error_message = f"""
-        Error occurred in script: 
+        Error occured in script: 
         [ {file_name} ] at 
         try block line number: [{try_block_line_number}] and exception block line number: [{exception_block_line_number}] 
         error message: [{error_message}]
@@ -34,3 +34,4 @@ class HousingException(Exception):
 
     def __repr__(self) -> str:
         return HousingException.__name__.str()
+
