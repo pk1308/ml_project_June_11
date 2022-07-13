@@ -130,3 +130,4 @@ dmypy.json
 study
 notebook
 .vscode/extensions.json
+envs
