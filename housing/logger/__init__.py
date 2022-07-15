@@ -16,7 +16,7 @@ LOG_FILE_PATH = os.path.join(LOG_DIR,LOG_FILE_NAME)
 
 
 
-logging.add(LOG_FILE_PATH,format="{time:YYYY-MM-DD at HH:mm:ss} | {level} | {line:<4} | {file} | {function} |{message}",level="DEBUG")
+logging.add(LOG_FILE_PATH,format="{time:YYYY-MM-DD at HH:mm:ss} | {level} | {line:<4} | {file} | {function} |\n {message}",level="DEBUG")
 
 def get_log_dataframe(file_path):
     data=[]
